@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Super Dex</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ruta al archivo CSS -->
+    <link rel="icon" href="recursos/favicon.ico" type="image/x-icon"> <!-- Ruta al favicon -->
+</head>
+<body>
+    <header>
+        <h1>Pokémon Super Dex</h1>
+    </header>
+
+    <div class="main-container">
+        <section id="search">
+            <div id="pokemon-info">
+                <h2>Buscar Pokémon</h2>
+                <div id="search-form">
+                    <input type="text" id="pokemon-query" placeholder="ID o nombre del Pokémon">
+                    <button id="search-button">Buscar</button>
+                </div>
+                <div id="pokemon-details">
+                    <img id="pokemon-image" src="recursos/desconocido.png" alt="Imagen del Pokémon"> <!-- Ruta a la imagen del Pokémon -->
+                    <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
+                    <p><strong>Nombre:</strong> <span id="pokemon-name"></span></p>
+                    <p><strong>Peso:</strong> <span id="pokemon-weight"></span></p>
+                    <p><strong>Altura:</strong> <span id="pokemon-height"></span></p>
+                    <p><strong>Tipo:</strong> <span id="pokemon-types"></span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pokémon Super Dex. Todos los derechos reservados.</p>
+    </footer>
+
+    <audio id="background-music" src="recursos/musica.mp3" autoplay loop>
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <button id="play-music-button" style="display: none;">Reproducir música</button>
+
+    <script src="script.js"></script> <!-- Ruta al archivo JavaScript -->
+</body>
+</html>

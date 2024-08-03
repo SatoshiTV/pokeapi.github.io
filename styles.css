@@ -1,0 +1,112 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Oculta el scroll para efectos de fondo */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('recursos/FONDO.gif') no-repeat center center fixed;
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el área del viewport */
+    position: relative; /* Asegura que los elementos posicionados absolutamente se posicionen respecto al body */
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(255, 0, 0, 0.8); /* Color de encabezado rojo transparente */
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Asegura que el encabezado esté por encima del fondo animado */
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente para un aspecto más profesional */
+}
+
+/* Contenedor principal para centrar el contenido de búsqueda */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Estilos del contenido de Pokémon */
+#pokemon-info {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia para un efecto más elegante */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 2; /* Asegura que el contenido esté por encima del fondo */
+}
+
+/* Estilos para la imagen del Pokémon */
+#pokemon-image {
+    max-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el formulario de búsqueda */
+#search-form {
+    margin-bottom: 20px;
+    text-align: center; /* Asegura que los elementos del formulario estén centrados */
+}
+
+#search-form input {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px; /* Espaciado entre el input y el botón */
+    border: 1px solid #ccc;
+}
+
+#search-form button {
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Espaciado adicional para bajar el botón */
+}
+
+#search-form button:hover {
+    background-color: #ffc107; /* Color amarillo */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background-color: rgba(255, 0, 0, 0.1); /* Fondo blanco con tinte rojo */
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    z-index: 2; /* Asegura que el pie de página esté por encima del fondo */
+    font-size: 0.875rem;
+}
+
+#play-music-button {
+    position: fixed;
+    top: 14%;
+    right: 45.5%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3e04aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
